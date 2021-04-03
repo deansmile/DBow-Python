@@ -8,7 +8,7 @@ def orb_features(n):
     """
     ORB特征提取
     """
-    print 'reading images ...'
+    print('reading images ...')
 
     descriptors = []
     orb = cv2.ORB_create(10000) #表示提取一幅图像的n个特征, 如需生成字典文件，改为10000
