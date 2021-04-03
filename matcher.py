@@ -26,7 +26,7 @@ class Matcher(object):
         """
         assert isinstance(q_id, int)
         if q_id > self.N or q_id < 0:
-            print "query id out of range"
+            print ("query id out of range")
             return
         q_des= self.db_descriptors[q_id]
         return self.query_features(q_des, 10)
