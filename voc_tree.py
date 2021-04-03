@@ -175,7 +175,7 @@ def constructTree(K, L, data):
     """
     print ("building tree: K = " + str(K) + ", L = " + str(L))
 
-    NUM_NODES = (K**(L + 1) - 1) / (K - 1)  # 总节点数
+    NUM_NODES = (K**(L + 1) - 1) // (K - 1)  # 总节点数
 
     treeArray = [Node() for i in range(NUM_NODES)]
     NUM_LEAFS = 0
