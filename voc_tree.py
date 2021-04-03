@@ -173,7 +173,7 @@ def constructTree(K, L, data):
     """
     构建字典树
     """
-    print "building tree: K = " + str(K) + ", L = " + str(L)
+    print ("building tree: K = " + str(K) + ", L = " + str(L))
 
     NUM_NODES = (K**(L + 1) - 1) / (K - 1)  # 总节点数
 
@@ -249,7 +249,7 @@ def constructTree(K, L, data):
                         treeArray[childPos].inverted_index = {}
                         treeArray[childPos].cen = center[x, :]
                         if clust.data.size == 0:
-                            print "ZERO CLUSTER"
+                            print ("ZERO CLUSTER")
                         NUM_LEAFS += 1
             else:
                 x = 0
@@ -263,6 +263,6 @@ def constructTree(K, L, data):
                 else:
                     treeArray[childPos].inverted_index = {}
 
-    print "num leafs: " + str(NUM_LEAFS)
-    print 'save voc.txt ... done'
+    print ("num leafs: " + str(NUM_LEAFS))
+    print ('save voc.txt ... done')
     return treeArray
